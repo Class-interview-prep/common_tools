@@ -5,7 +5,6 @@ module "services_ingress" {
   environment = "${var.deployment_environment}"
   path        = "./main-helm"
 
-
   set {
     name  = "nexusport"
     value = "${var.nexus_service_port}"
